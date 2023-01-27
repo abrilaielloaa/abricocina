@@ -3,6 +3,72 @@
     padding: 0;
 }
 
+html{
+    font-size: 62,5%;
+}
+
+body{
+    background-image: url(../assets/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    background-color: #3D3B3B;
+    height: 20vh;
+}
+
+.colorLinks{ 
+    color: #ECEDE7;
+    margin-right: 6rem;
+    font-family: kanit, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+h1{
+    color: #ECEDE7;
+    font-family: kanit, sans-serif;
+    font-size: 3rem;
+}
+
+.hHeader{
+    letter-spacing: 1rem;
+}
+
 ul{
     list-style: none;
 }
+
+li{
+    margin-right: 2rem;
+}
+
+.banner{
+    background-color: #ECEDE7;
+    height: 75vh;
+}
+
+.divBannerColor{
+    background-color: #40531B;
+    color: #ECEDE7;
+    font-family:kanit, sans-serif;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sectionFavoritas{
+    background-color: #3D3B3B;
+    margin-top: 30rem;
+    height: 75vh;
+}
+
+.sectionFavoritas h2{
+    color: #ECEDE7;
+}
+
+
