@@ -18,44 +18,35 @@ body{
 
 header{
     background-color: #3D3B3B;
-    height: 20vh;
 }
 
 .colorLinks{ 
     color: #ECEDE7;
-    margin-right: 6rem;
     font-family: kanit, sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
 }
 
-h1{
+h1, h2, h3{
     color: #ECEDE7;
     font-family: kanit, sans-serif;
-    font-size: 3rem;
-}
-
-.hHeader{
-    letter-spacing: 1rem;
 }
 
 ul{
     list-style: none;
 }
 
-li{
-    margin-right: 2rem;
-}
 
 .banner{
     background-color: #ECEDE7;
-    height: 75vh;
 }
 
 .divBannerColor{
     background-color: #40531B;
     color: #ECEDE7;
     font-family:kanit, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 p{
@@ -63,12 +54,37 @@ p{
 }
 .sectionFavoritas{
     background-color: #3D3B3B;
-    margin-top: 30rem;
-    height: 75vh;
 }
 
 .sectionFavoritas h2{
     color: #ECEDE7;
+    text-align: center;
+
 }
 
+.botonCards{
+    border-color: #40531B;
+    background-color: #40531B;
+    color: #ECEDE7;
+}
 
+.bckgCards{
+    background-color: #ECEDE7;
+}
+
+.bckgCards p{
+    text-align: justify;
+}
+
+.bckgCards h3{
+    color: #3D3B3B;
+    font-family: kenit, sans-serif;
+}
+
+.recetasIndex{
+    background-color: #E03412;
+}
+
+footer{
+    background-color: #3D3B3B;
+}
