@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abri Cocina | Panes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
+    <div>
+        <header class="d-flex justify-content-end">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,12 +43,12 @@
         </header>
 
         <main>
-            <div class="banner">
-                <div>
+            <div class="banner d-flex container-fluid row m-0 p-0">
+                <div class="col-12 col-sm-4 m-0 p-0">
                     <img src="./assets/videobanner.gif" alt="Video estirando una masa" class="w-100">
                 </div>
 
-                <div class="divBannerColor">
+                <div class="divBannerColor col-sm-8">
                     <h1>Abri Cocina</h1>
                     <p>Recetas para mi, recetas para todos mis compas</p>
                 </div>
@@ -59,31 +59,31 @@
                     <h2>Mis favoritas</h2>
                 </div>
 
-                <div>
-                    <article class="card bckgCards">
-                        <h3 class="card-title">Tiramisu</h3>
-                        <img src="./assets/tiramisu.jpg" class="card-img-top"
+                <div class="d-flex flex-column flex-md-row justify-content-around">
+                    <article class="card bckgCards m-5 d-flex justify-content-center align-items-center flex-wrap w-md-25">
+                        <h3 class="card-title text-center">Tiramisu</h3>
+                        <img src="./assets/tiramisu.jpg" class="card-img-top w-75"
                             alt="Tiramisu con porción faltante para mostrar el relleno de vainillas y crema de mascarpone">
-                        <div class="card-body cardsBotonParrafo">
+                        <div class="card-body cardsBotonParrafo d-flex flex-column align-items-center">
                             <p class="card-text">Mi mamá me dio la vida, el tiramisú las ganas de vivirla</p>
                             <a href="#" class="btn btn-primary botonCards">Receta</a>
                         </div>
                     </article>
 
-                    <article class="card bckgCards">
-                        <h3 class="card-title h3especial">Sanguchitos</h3>
-                        <img src="./assets/tortasandwich.jpeg" class="card-img-top"
+                    <article class="card bckgCards m-5 d-flex justify-content-center align-items-center flex-wrap w-md-25">
+                        <h3 class="card-title text-center">Sanguchitos</h3>
+                        <img src="./assets/tortasandwich.jpeg" class="card-img-top w-75"
                             alt="Torta de rebanadas de pan y dulce de leche, estilo budin de pan">
-                        <div class="card-body cardsBotonParrafo">
+                        <div class="card-body cardsBotonParrafo d-flex flex-column align-items-center">
                             <p class="card-text">75% segura de que mi pareja gusta de mi por esta receta</p>
                             <a href="#" class="btn btn-primary botonCards">Receta</a>
                         </div>
                     </article>
-                    <article class="card bckgCards">
-                        <h3 class="card-title">Cookies</h3>
-                        <img src="./assets/cookiesyankees.jpg" class="card-img-top"
+                    <article class="card bckgCard m-5 d-flex justify-content-center align-items-center flex-wrap w-md-25">
+                        <h3 class="card-title text-center">Cookies</h3>
+                        <img src="./assets/cookiesyankees.jpg" class="card-img-top w-75"
                             alt="Galletitas de vainilla con chips de chocolate estilo estadounidense">
-                        <div class="card-body cardsBotonParrafo">
+                        <div class="card-body cardsBotonParrafo d-flex flex-column align-items-center">
                             <p class="card-text">100% segura de que yo gusto de mi por esta receta</p>
                             <a href="#" class="btn btn-primary botonCards">Receta</a>
                         </div>
@@ -91,27 +91,27 @@
                 </div>
             </section>
 
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Dulces</h2>
-            </div>
-            <div class="col-md-6">
-                <h2>Saladas</h2>
-            </div>
-        </div>
-        <div class="row col-md-6">
-            <h2>Panes</h2>
-        </div>
-    </section>
+            <section class="container-fluid row m-0 p-0 recetasIndex">
+                <div class="d-flex flex-column col-12 col-sm-6">
+                   <div class="divRecetasIndex">
+                       <h2>Dulces</h2>
+                    </div>
+                    <div class="divRecetasIndex">
+                        <h2>Salados</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 divRecetasIndex">
+                    <h2>Panes</h2>
+                </div>
+            </section>
     </main>
 
     <footer class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-6 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                 <p>Abri Cocina</p>
             </div>
-            <div class="col-md-2 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-2 d-flex flex-column align-items-center">
                 <h2>Dulces</h2>
                 <ul>
                     <li>Lorem ipsum dolor</li>
@@ -120,7 +120,7 @@
                     <li>Lorem ipsum dolor</li>
                 </ul>
             </div>
-            <div class="col-md-2 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-2 d-flex flex-column align-items-center">
                 <h2>Panes</h2>
                 <ul>
                     <li>Lorem ipsum dolor</li>
@@ -129,7 +129,7 @@
                     <li>Lorem ipsum dolor</li>
                 </ul>
             </div>
-            <div class="col-md-2 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-2 d-flex flex-column align-items-center">
                 <h2>Salados</h2>
                 <ul>
                     <li>Lorem ipsum dolor</li>
