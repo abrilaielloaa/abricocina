@@ -215,3 +215,8 @@ footer{
         width: 25%;
     }
 }
+@media (min-width: 992px) {
+    .banner h1{
+        font-size: 13rem;
+    }
+}
