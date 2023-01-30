@@ -16,13 +16,35 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    display: grid;
+    grid-template:
+        "header" 1fr
+        "." 6fr
+        "main" 26fr
+        "." 7fr
+        "footer" 1fr;
+}
+
 header{
     background-color: #3D3B3B;
+    grid-area: header;
 }
 
 .colorLinks{ 
     color: #ECEDE7;
     font-family: kanit, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.colorLinks:hover{
+    color: #E03412;
+    border-bottom: #E03412 solid 1px;
 }
 
 h1, h2, h3{
@@ -34,19 +56,33 @@ ul{
     list-style: none;
 }
 
+main{
+    grid-area: main;
+    display: grid;
+    grid-template:  
+        "banner" auto
+        "." 2fr
+        "favoritas" 2fr
+        "." 2fr
+        "recetas" 18%;
+            
+}
 
 .banner{
     background-color: #ECEDE7;
+    grid-area: banner;
+    font-size: 2rem;
 }
+
+.banner h1{
+    font-size: 12rem;
+}
+
 
 .divBannerColor{
     background-color: #40531B;
     color: #ECEDE7;
     font-family:kanit, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
 
 p{
@@ -54,18 +90,24 @@ p{
 }
 .sectionFavoritas{
     background-color: #3D3B3B;
+    grid-area: favoritas;
 }
 
 .sectionFavoritas h2{
     color: #ECEDE7;
     text-align: center;
-
+    font-size: 5rem;
 }
 
 .botonCards{
     border-color: #40531B;
     background-color: #40531B;
     color: #ECEDE7;
+}
+
+.botonCards:hover{
+    background-color: #E03412;
+    border-color: #E03412;
 }
 
 .bckgCards{
@@ -82,13 +124,44 @@ p{
 }
 
 .recetasIndex{
-    background-color: #E03412;
+    grid-area: recetas;
 }
 
 .divRecetasIndex{
-    border:#ECEDE7 solid 1px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
+
+.divRecetasIndex h2{
+    background-color: #3d3b3b6d;
+
+}
+
+.divRecetasIndex:hover{
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.divRecetasIndex:hover > h2{
+    background-color: #3d3b3b00;
+}
+
+.recetasDulcesIndex{
+    background-image:url(../assets/copacindor.jpg);
+}
+.recetasSaladasIndex{
+    background-image: url(../assets/risottohongos.jpg);
+}
+.recetasPanIndex{
+    background-image: url(../assets/panajococido.jpg);
+}
+
 
 footer{
     background-color: #3D3B3B;
+    grid-area: footer;
+    color: #ECEDE7;
+    font-size: 2rem;
+    font-weight: 200;
 }
