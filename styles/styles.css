@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 html{
     font-size: 62,5%;
 }
@@ -12,22 +13,11 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
 a{
     text-decoration: none;
-}
-
-.contenedor{
-    display: grid;
-    grid-template:
-        "header" 1fr
-        "." 6fr
-        "main" 26fr
-        "." 7fr
-        "footer" 1fr;
 }
 
 header{
@@ -39,7 +29,6 @@ header{
     color: #ECEDE7;
     font-family: kanit, sans-serif;
     font-size: 2rem;
-    font-weight: 200;
 }
 
 .colorLinks:hover{
@@ -58,26 +47,11 @@ ul{
 
 main{
     grid-area: main;
-    display: grid;
-    grid-template:  
-        "banner" auto
-        "." 2fr
-        "favoritas" 2fr
-        "." 2fr
-        "recetas" 18%;
-            
 }
-
 .banner{
     background-color: #ECEDE7;
     grid-area: banner;
-    font-size: 2rem;
 }
-
-.banner h1{
-    font-size: 12rem;
-}
-
 
 .divBannerColor{
     background-color: #40531B;
@@ -96,7 +70,6 @@ p{
 .sectionFavoritas h2{
     color: #ECEDE7;
     text-align: center;
-    font-size: 5rem;
 }
 
 .botonCards{
@@ -162,6 +135,83 @@ footer{
     background-color: #3D3B3B;
     grid-area: footer;
     color: #ECEDE7;
-    font-size: 2rem;
-    font-weight: 200;
+}
+
+@media (min-width: 320px) {
+    .contenedor{
+        display: grid;
+        grid-template:
+            "header" 1fr
+            "." 2fr
+            "main" 30fr
+            "." 1fr
+            "footer" 1fr;
+    }
+    .banner{
+        font-size: 113%;
+    }
+    .banner h1{
+        font-size: 7rem;
+    }
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template:  
+            "banner" auto
+            "." 1fr
+            "favoritas" 4fr
+            "." 1fr
+            "recetas" 5fr;        
+    }
+
+    .sectionFavoritas h2{
+        font-size: 4rem;
+    }
+    .sectionFavoritas h3{
+        font-size: 2rem;
+    }
+    .recetasIndex a{
+        height: 100vh;
+        width: 90vw;
+
+    }    
+    .recetasIndex h2{
+        font-size: 2rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+
+}
+@media (min-width: 580px) {
+    .banner img{
+        height: 70vh;
+    }
+}
+@media (min-width: 992px) {
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template:  
+            "banner" auto
+            "." 2fr
+            "favoritas" 4fr
+            "." 1fr
+            "recetas" 5fr;        
+    }
+    .banner img{
+        height: 100vh;
+    }
+    .banner{
+        grid-area: banner;
+        font-size: 2rem;
+    }
+    .banner h1{
+        font-size: 10rem;
+    }
+    .recetasIndex a{
+        width: 25%;
+    }
 }
